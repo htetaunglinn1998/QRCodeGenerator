@@ -1,0 +1,345 @@
+.glass-bg{
+background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.3px);
+-webkit-backdrop-filter: blur(5.3px);
+}
+
+/* Input Box */
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+  }
+  
+  button {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+  }
+  
+
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  .webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 1.4rem 2rem 1.6rem;
+    background: rgba(57, 63, 84, 0.8);
+  }
+  .webflow-style-input:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background-size: 500% auto;
+    -webkit-animation: gradient 3s linear infinite;
+            animation: gradient 3s linear infinite;
+  }
+  
+  .webflow-style-input input {
+    flex-grow: 1;
+    color: #BFD2FF;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+  }
+  .webflow-style-input input::-webkit-input-placeholder {
+    color: #7881A1;
+  }
+  
+  .webflow-style-input button {
+    color: #7881A1;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    transition: color 0.25s;
+  }
+  .webflow-style-input button:hover {
+    color: #BFD2FF;
+    transform: translateX(3px);
+    transition: all 1s ease;
+  }
+
+
+/* Background */
+.gradient1{
+    position: absolute;
+    left: 8.97%;
+    right: 57.9%;
+    top: 19.53%;
+    bottom: 30.89%;
+    
+    background: linear-gradient(135.18deg, rgba(252, 0, 121, 0.91) -5.03%, #00FFD1 109.08%);
+    /* blur */
+    filter: blur(50px);
+    transform: matrix(0.91, 0.17, -0.48, 0.98, 0, 0);
+    animation-name: g1-animation;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.gradient2{
+    position: absolute;
+    left: 32.71%;
+    right: 34.8%;
+    top: 43.47%;
+    bottom: 6.45%;
+    
+    background: linear-gradient(139.92deg, #00FFF0 16.24%, #FF9900 86.11%);
+    /* blur */
+    
+    filter: blur(50px);
+    transform: matrix(0.96, -0.12, 0.31, 0.99, 0, 0);
+    animation-name: g2-animation;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.gradient3{
+    position: absolute;
+    left: 109.58%;
+    right: -44.77%;
+    top: 24.81%;
+    bottom: -12.09%;
+    
+    background: linear-gradient(139.92deg, #003CFC -37.43%, #00FF29 109.44%);
+    /* blur */
+    
+    filter: blur(50px);
+    transform: matrix(-0.68, 0.48, -1.17, -0.64, 0, 0);
+    animation-name: g3-animation;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+/* The animation code */
+@keyframes g1-animation{
+    0%   {
+        position: absolute;
+        left: 8.97%;
+        right: 57.9%;
+        top: 19.53%;
+        bottom: 30.89%;
+        
+        background: linear-gradient(135.18deg, rgba(252, 0, 121, 0.91) -5.03%, #00FFD1 109.08%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.91, 0.17, -0.48, 0.98, 0, 0);
+    }
+    30%  {position: absolute;
+        left: 41.06%;
+        right: 26.22%;
+        top: 41.93%;
+        bottom: 9.69%;
+        
+        background: linear-gradient(139.65deg, rgba(255, 0, 122, 0.91) -0.48%, #00FFD1 106.01%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.91, 0.17, -0.48, 0.98, 0, 0);}
+    76%  {position: absolute;
+        left: 70.92%;
+        right: -8.12%;
+        top: 24.89%;
+        bottom: 13.25%;
+        
+        background: linear-gradient(135.18deg, rgba(255, 0, 122, 0.91) -5.03%, #00FFD1 109.08%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.91, 0.17, -0.48, 0.98, 0, 0);}
+    100% { position: absolute;
+        position: absolute;
+        left: 8.97%;
+        right: 57.9%;
+        top: 19.53%;
+        bottom: 30.89%;
+        
+        background: linear-gradient(135.18deg, rgba(252, 0, 121, 0.91) -5.03%, #00FFD1 109.08%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.91, 0.17, -0.48, 0.98, 0, 0);}
+  }
+
+  /* The animation code */
+@keyframes g2-animation{
+    0%   {
+        position: absolute;
+        left: 32.71%;
+        right: 34.8%;
+        top: 43.47%;
+        bottom: 6.45%;
+        
+        background: linear-gradient(139.92deg, #00FFF0 16.24%, #FF9900 86.11%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.96, -0.12, 0.31, 0.99, 0, 0);
+        
+    }
+    35%  {
+        position: absolute;
+        left: 5.51%;
+        right: 55.28%;
+        top: 20.55%;
+        bottom: 24.63%;
+        
+        background: linear-gradient(135.54deg, #00FFF0 12.41%, #FF9900 82.27%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.96, -0.12, 0.31, 0.99, 0, 0);
+    }
+    70%  {
+        position: absolute;
+        left: 2.64%;
+        right: 61.2%;
+        top: 24.64%;
+        bottom: -1.29%;
+        
+        background: linear-gradient(139.92deg, #00FFF0 16.24%, #FF9900 86.11%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.96, -0.12, 0.31, 0.99, 0, 0);
+    }
+    100% { 
+        position: absolute;
+        left: 32.71%;
+        right: 34.8%;
+        top: 43.47%;
+        bottom: 6.45%;
+        
+        background: linear-gradient(139.92deg, #00FFF0 16.24%, #FF9900 86.11%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(0.96, -0.12, 0.31, 0.99, 0, 0);
+        }
+  }
+
+
+  /* The animation code */
+@keyframes g3-animation{
+    0%   {
+    position: absolute;
+    left: 90.58%;
+    right: -44.77%;
+    top: 24.81%;
+    bottom: -12.09%;
+    
+    background: linear-gradient(139.92deg, #003CFC -37.43%, #00FF29 109.44%);
+    /* blur */
+    
+    filter: blur(50px);
+    transform: matrix(-0.68, 0.48, -1.17, -0.64, 0, 0);
+    }
+    35%  {position: absolute;
+        left: 106.44%;
+        right: -33.13%;
+        top: 69.67%;
+        bottom: -51.77%;
+        
+        background: linear-gradient(141.1deg, #003CFC -32.87%, #00FF29 102.57%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(-0.68, 0.48, -1.17, -0.64, 0, 0);}
+    70%  {position: absolute;
+        left: 80.49%;
+        right: -23.38%;
+        top: 24.11%;
+        bottom: -19.72%;
+        
+        background: linear-gradient(139.92deg, #003CFC -37.43%, #00FF29 109.44%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(-0.68, 0.48, -1.17, -0.64, 0, 0);}
+    100% { position: absolute;
+        left: 90.58%;
+        right: -44.77%;
+        top: 24.81%;
+        bottom: -12.09%;
+        
+        background: linear-gradient(139.92deg, #003CFC -37.43%, #00FF29 109.44%);
+        /* blur */
+        
+        filter: blur(50px);
+        transform: matrix(-0.68, 0.48, -1.17, -0.64, 0, 0);}
+  }
+
+
+
+
+
